@@ -15,5 +15,13 @@
     "sqlite3": "^5.1.2"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davin12345678910/FirstApp_DubHacks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davin12345678910/FirstApp_DubHacks/issues"
+  },
+  "homepage": "https://github.com/davin12345678910/FirstApp_DubHacks#readme",
   "description": ""
 }
