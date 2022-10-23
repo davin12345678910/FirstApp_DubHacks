@@ -87,12 +87,12 @@
     document.getElementById('budget').value = "";
     let urlInputStudents = "/budget/students";
 
-    let pattern1 = "^([a-zA-Z]+)$";
-    let pattern2 = "^([0-9]+)$";
-    let first = name.test(pattern1);
-    let second = topic.test(pattern1);
-    let third = question.test(pattern1);
-    let fourth = budget.test(pattern2);
+    let pattern1 = /^([a-zA-Z]+)$/;
+    let pattern2 = /^([0-9]+)$/;
+    let first = pattern1.test(name);
+    let second = pattern1.test(topic);
+    let third = pattern1.test(question);
+    let fourth = pattern2.test(budget);
 
     if (first && second && third && fourth) {
       let studentPage = document.getElementById('student-profile');
@@ -212,11 +212,11 @@
 
     console.log("This is the topic: " + topic);
 
-    let pattern1 = "^([a-zA-Z]+)$";
-    let pattern2 = "^([0-9]+)$";
-    let first = name.test(pattern1);
-    let second = topic.test(pattern1);
-    let third = rate.test(pattern1);
+    let pattern1 = /^([a-zA-Z]+)$/;
+    let pattern2 = /^([0-9]+)$/;
+    let first = pattern1.test(name);
+    let second = pattern1.test(topic);
+    let third = pattern2.test(rate);
 
     if (first && second && third) {
       let studentPage = document.getElementById('teacher-profile');
