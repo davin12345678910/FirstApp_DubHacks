@@ -15,6 +15,7 @@ first step: you will want to call npm init
 second step: you will want to call npm install
 
 third step: you will want to run nodemon
+- you might need to insall nodemon
 
 fourth step: you will want to open the website on: http://localhost:8000/main.html
 
