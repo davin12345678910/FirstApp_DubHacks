@@ -304,7 +304,7 @@
     let messagingDiv = document.getElementById('messaging-platform');
     messagingDiv.classList.remove('hidden');
 
-    let teacherForm = document.getElementById('teacher-matches');
+    let teacherForm = document.getElementById('teacher-matches-2');
     teacherForm.classList.add('hidden');
 
     let backButton = document.getElementById('back-to-list');
@@ -315,7 +315,7 @@
     let messagingDiv = document.getElementById('messaging-platform');
     messagingDiv.classList.add('hidden');
 
-    let teacherForm = document.getElementById('teacher-matches');
+    let teacherForm = document.getElementById('teacher-matches-2');
     teacherForm.classList.remove('hidden');
 
     let messagingPlat = document.getElementById('messaging-platform');
