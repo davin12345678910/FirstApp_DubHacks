@@ -1,0 +1,140 @@
+<!--
+Team members: Davin Win Kyi, Aditya`
+-->
+
+<!--We will need to have multiple componenets, and we
+will hide parts if we are not currently in the -->
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset='utf-8'>
+    <title>BudgetLearn</title>
+    <link href='https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="http://fonts.cdnfonts.com/css/maison-neue" rel="stylesheet">
+
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/maison-neue');
+    </style>
+    <link rel='stylesheet' href='main.css'>
+    <script src='index.js'></script>
+    </head>
+    <body>
+    <!--This will be the div for the new user creation div-->
+    <div id="sp">
+        <div id="sp-1">
+            <h1 id="title">Welcome to budgetLearn!</h1>
+        </div>
+
+        <div id="sp-2">
+            <h2>Wanna learn on a budget or teach to earn some money!</h2>
+            <div id="first-buttons">
+                <button id="learn-button">
+                    I wanna learn!
+                </button>
+
+                <button id="teach-button">
+                    I wanna teach!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--This will be the div.
+    where students can input information -->
+    <div id="student-profile" class="hidden">
+        <div id="student-profile-1">
+            <h1 id="title">budgetLearn</h1>
+        </div>
+
+        <div id="student-profile-2">
+            <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+><br><br>
+            <label for="topic">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="topic" name="topic" pattern="[a-zA-Z\s]+><br><br>
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question" pattern="[a-zA-Z\s]+><br><br>
+            <label for="budget">Budget:&nbsp&nbsp&nbsp</label>
+            <input type="text" id="budget" name="budget" pattern="[0-9]+"><br><br>
+            <div id="student-question-button">
+                <button id="back-to-choose-student">
+                    back to choosing
+                </button>
+                <button id="student-submit-button">
+                    Press to find matches!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--This will be the div
+    where teachers can input information-->
+    <div id="teacher-profile" class="hidden">
+        <div id="teacher-profile-1">
+            <h1 id="title">budgetLearn</h1>
+        </div>
+
+        <div id="teacher-profile-2">
+            <label for="name2">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="name2" name="name2" pattern="[a-zA-Z\s]+"><br><br>
+            <label for="topic2">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="topic2" name="topic2" pattern="[a-zA-Z\s]+"><br><br>
+            <label for="rate">Rate:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="number" id="rate" name="rate" pattern="[0-9]+"><br><br>
+
+            <div id="teacher-profile-buttons">
+                <button id="back-to-choose-teacher">
+                    back to choosing
+                </button>
+                <button id="teacher-submit-button">
+                    Press to find matches!
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="student-matches" class="hidden">
+        <div id="student-matches-1">
+            <h1 id="title"></h1>
+        </div>
+
+        <div id="student-matches-2">
+            <h1 class="title">Here are some teacher matches:</h1>
+
+            <button id="back-to-student-question">
+                previous form
+            </button>
+        </div>
+    </div>
+
+
+    <div id="teacher-matches" class="hidden">
+        <div id="teacher-matches-1">
+            <h1 id="title"></h1>
+        </div>
+
+        <div id="teacher-matches-2">
+            <h1 class="title">Here are some student matches:</h1>
+
+            <button id="back-to-teacher-profile">
+                previous form
+            </button>
+        </div>
+    </div>
+
+    <div id="messaging-platform" class="hidden">
+        Messaging + zoom feature Coming Soon!
+
+        <button id="back-to-list">
+            back to list!
+        </button>
+    </div>
+
+    </body>
+</html>
+
+
+
+
+
