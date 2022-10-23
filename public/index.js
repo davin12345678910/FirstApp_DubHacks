@@ -87,7 +87,7 @@
     document.getElementById('budget').value = "";
     let urlInputStudents = "/budget/students";
 
-    let pattern1 = /^([a-zA-Z]+)$/;
+    let pattern1 = /^([a-zA-Z\s]+)$/;
     let pattern2 = /^([0-9]+)$/;
     let first = pattern1.test(name);
     let second = pattern1.test(topic);
@@ -212,7 +212,7 @@
 
     console.log("This is the topic: " + topic);
 
-    let pattern1 = /^([a-zA-Z]+)$/;
+    let pattern1 = /^([a-zA-Z\s]+)$/;
     let pattern2 = /^([0-9]+)$/;
     let first = pattern1.test(name);
     let second = pattern1.test(topic);
@@ -308,15 +308,15 @@
     teacherForm.classList.add('hidden');
 
     let backButton = document.getElementById('back-to-list');
-    backButton.addEventListener('click', backToList);
+    backButton.addEventListener('click', backToList2);
   }
 
   function backToList2() {
     let messagingDiv = document.getElementById('messaging-platform');
-    messagingDiv.classList.remove('hidden');
+    messagingDiv.classList.add('hidden');
 
     let teacherForm = document.getElementById('teacher-matches');
-    teacherForm.classList.add('hidden');
+    teacherForm.classList.remove('hidden');
 
     let messagingPlat = document.getElementById('messaging-platform');
     messagingPlat.classList.add('hidden');
