@@ -87,7 +87,7 @@
     document.getElementById('budget').value = "";
     let urlInputStudents = "/budget/students";
 
-    let pattern1 = /^([a-zA-Z]+)$/;
+    let pattern1 = /^([a-zA-Z\s]+)$/;
     let pattern2 = /^([0-9]+)$/;
     let first = pattern1.test(name);
     let second = pattern1.test(topic);
@@ -212,7 +212,7 @@
 
     console.log("This is the topic: " + topic);
 
-    let pattern1 = /^([a-zA-Z]+)$/;
+    let pattern1 = /^([a-zA-Z\s]+)$/;
     let pattern2 = /^([0-9]+)$/;
     let first = pattern1.test(name);
     let second = pattern1.test(topic);
