@@ -89,9 +89,10 @@
 
     let pattern1 = /^([a-zA-Z\s]+)$/;
     let pattern2 = /^([0-9]+)$/;
+    let pattern3 = /^([a-zA-Z\s]+[?]*)$/;
     let first = pattern1.test(name);
     let second = pattern1.test(topic);
-    let third = pattern1.test(question);
+    let third = pattern3.test(question);
     let fourth = pattern2.test(budget);
 
     if (first && second && third && fourth) {
@@ -192,6 +193,9 @@
 
     let messagingPlat = document.getElementById('messaging-platform');
     messagingPlat.classList.add('hidden');
+
+    let current = document.getElementById('teacher-matches');
+    current.classList.add('hidden');
   }
 
 //TEACHER MATCHES///////////////////////////////////////////////////////////////
@@ -304,7 +308,7 @@
     let messagingDiv = document.getElementById('messaging-platform');
     messagingDiv.classList.remove('hidden');
 
-    let teacherForm = document.getElementById('teacher-matches-2');
+    let teacherForm = document.getElementById('teacher-matches');
     teacherForm.classList.add('hidden');
 
     let backButton = document.getElementById('back-to-list');
@@ -312,10 +316,14 @@
   }
 
   function backToList2() {
+    let current = document.getElementById('student-matches');
+    current.classList.add('hidden');
+    console.log("I went into HERE!");
+
     let messagingDiv = document.getElementById('messaging-platform');
     messagingDiv.classList.add('hidden');
 
-    let teacherForm = document.getElementById('teacher-matches-2');
+    let teacherForm = document.getElementById('teacher-matches');
     teacherForm.classList.remove('hidden');
 
     let messagingPlat = document.getElementById('messaging-platform');
@@ -327,6 +335,7 @@
 
   // these are the bacl button functions
   function studentBackQuestionFunction() {
+    console.log("I am going from the student matches to the profile");
     let studentPage = document.getElementById('student-profile');
     studentPage.classList.remove('hidden');
 
@@ -341,11 +350,15 @@
   }
 
   function teacherBackProfileFunction() {
+    console.log("I am going from the teacher matches to the profile");
     let studentPage = document.getElementById('teacher-profile');
     studentPage.classList.remove('hidden');
 
     let studentMatches = document.getElementById('teacher-matches');
     studentMatches.classList.add('hidden');
+
+    let messagingPlat = document.getElementById('messaging-platform');
+    messagingPlat.classList.add('hidden');
 
     let allElements = document.getElementsByClassName('card');
 
@@ -359,6 +372,7 @@
   // class associated with it
 
   function backToChooseStudent() {
+    console.log("I am going to go back to choose from STUDENTS");
     let allElements = document.getElementsByClassName('card');
     while(allElements.length > 0){
       allElements[0].parentNode.removeChild(allElements[0]);
@@ -376,6 +390,7 @@
   }
 
   function backToChooseTeacher() {
+    console.log("I am going to go back to choose from TEACHERS");
     let allElements = document.getElementsByClassName('card');
     while(allElements.length > 0){
       allElements[0].parentNode.removeChild(allElements[0]);
